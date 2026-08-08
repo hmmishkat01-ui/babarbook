@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>প্রশান্তির সন্ধানে — ডা. মুশফিকুর রহমান</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       HOME VIEW
+  ══════════════════════════════════════ -->
+  <div id="view-home" class="view active">
+
+    <!-- HERO -->
+    <section class="hero">
+      <!-- Signature Sunrise Arc (ambient, sun low-left) -->
+      <div class="arc-wrap arc-home" aria-hidden="true">
+        <svg class="arc-svg" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+          <defs>
+            <linearGradient id="arcGradHome" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#14103A"/>
+              <stop offset="40%" stop-color="#0E9C8C" stop-opacity="0.9"/>
+              <stop offset="72%" stop-color="#FF6F5E" stop-opacity="0.75"/>
+              <stop offset="100%" stop-color="#FDB813" stop-opacity="0.75"/>
+            </linearGradient>
+            <radialGradient id="sunGlowHome" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FDB813" stop-opacity="1"/>
+              <stop offset="60%" stop-color="#FDB813" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#FDB813" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <!-- Arc path: half ellipse -->
+          <path d="M 30 310 A 270 260 0 0 1 570 310" fill="none" stroke="url(#arcGradHome)" stroke-width="3.5" stroke-linecap="round" opacity="0.7"/>
+          <path d="M 30 310 A 270 260 0 0 1 570 310" fill="none" stroke="url(#arcGradHome)" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+          <!-- Sun dot: low-left, dark side -->
+          <circle class="sun-pulse" cx="98" cy="222" r="22" fill="url(#sunGlowHome)" />
+          <circle cx="98" cy="222" r="10" fill="#FDB813" />
+        </svg>
+      </div>
+
+      <div class="hero-inner container">
+        <div class="hero-text reveal">
+          <span class="hero-eyebrow">একটি জাদুকরী আরোগ্যের পথ</span>
+          <h1 class="hero-title">প্রশান্তির সন্ধানে</h1>
+          <p class="hero-subtitle">অ্যাংজাইটি, ট্রমা ও বিষণ্ণতা থেকে চিরস্থায়ী সমাধানের এক জাদুকরী পথ</p>
+          <p class="hero-hook">যখন রাতের অন্ধকার কাটতে চায় না — তখনও একটা ভোর আসে।<br/>এই বই সেই ভোরের পথ দেখায়।</p>
+          <button class="btn-primary btn-cta hero-cta" data-goto="checkout">
+            এখনই অর্ডার করুন — ৳৯৯৯
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p class="hero-note">📦 সারা বাংলাদেশে ক্যাশ অন ডেলিভারি — এখন কোনো টাকা লাগবে না</p>
+        </div>
+
+        <!-- 3D Book Mockup (CSS/SVG) -->
+        <div class="book-mockup reveal reveal-delay-1" aria-label="বইয়ের কভার মকআপ">
+          <div class="book-3d">
+            <div class="book-front">
+              <div class="book-front-inner">
+                <div class="book-arc-mini" aria-hidden="true">
+                  <svg viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="bookArcGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#14103A"/>
+                        <stop offset="45%" stop-color="#0E9C8C"/>
+                        <stop offset="75%" stop-color="#FF6F5E"/>
+                        <stop offset="100%" stop-color="#FDB813"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M 10 95 A 80 85 0 0 1 170 95" fill="none" stroke="url(#bookArcGrad)" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="35" cy="72" r="7" fill="#FDB813" opacity="0.9"/>
+                  </svg>
+                </div>
+                <span class="book-eyebrow-text">ডা. মুশফিকুর রহমান</span>
+                <h2 class="book-title-text">প্রশান্তির<br/>সন্ধানে</h2>
+                <p class="book-sub-text">৩D হিলিং প্রোটোকল</p>
+              </div>
+            </div>
+            <div class="book-spine">
+              <span>প্রশান্তির সন্ধানে</span>
+            </div>
+            <div class="book-shadow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave divider -->
+      <div class="wave-divider wave-dark-to-light" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#FFF8EF"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="problem-section section-light reveal-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" style="color:#F0708A">আপনি কি এটা অনুভব করছেন?</span>
+          <h2 class="section-title">রাত হলেই মনটা ভারী হয়ে আসে…</h2>
+          <p class="section-lead">অনেক মানুষ আছেন যাদের কোনো মেডিকেল রিপোর্টে কিছু ধরা পড়ে না — কিন্তু ভেতরে ভেতরে অনেক কিছু ভাঙছে।</p>
+        </div>
+        <div class="problem-grid">
+          <div class="problem-card reveal">
+            <div class="problem-icon" style="background:rgba(240,112,138,0.12)">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F0708A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            </div>
+            <p>রাতে ঘুম আসে না, মাথায় একের পর এক চিন্তা ঘুরতে থাকে — কিন্তু কেন, সেটাও বুঝতে পারেন না।</p>
+          </div>
+          <div class="problem-card reveal reveal-delay-1">
+            <div class="problem-icon" style="background:rgba(240,112,138,0.12)">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F0708A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <p>হঠাৎ বুকে চাপ, হাত-পা ঠান্ডা, শ্বাস নিতে কষ্ট — প্যানিক অ্যাটাক আসছে কিন্তু ডাক্তার বলছেন "সব ঠিক আছে।"</p>
+          </div>
+          <div class="problem-card reveal reveal-delay-2">
+            <div class="problem-icon" style="background:rgba(240,112,138,0.12)">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F0708A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <p>মানুষের ভিড়ে থেকেও একা মনে হয়। কাছের মানুষদের সাথে থেকেও একটা অদৃশ্য দেয়াল অনুভব করেন।</p>
+          </div>
+          <div class="problem-card reveal reveal-delay-1">
+            <div class="problem-icon" style="background:rgba(240,112,138,0.12)">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F0708A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <p>শরীরে এনার্জি নেই, ছোট কাজেও ক্লান্তি আসে — বার্নআউট কাটছেই না, মাসের পর মাস কেটে যাচ্ছে।</p>
+          </div>
+          <div class="problem-card reveal reveal-delay-2">
+            <div class="problem-icon" style="background:rgba(240,112,138,0.12)">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F0708A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+            </div>
+            <p>পুরনো কোনো ঘটনা মনে পড়লেই বুকটা ভারী হয়ে আসে — ট্রমা থেকে বের হওয়ার কোনো পথ খুঁজে পাচ্ছেন না।</p>
+          </div>
+        </div>
+        <div class="problem-resolution reveal">
+          <p>যদি এর যেকোনো একটাও আপনার কথা মনে হয় — তাহলে <strong>এই বই আপনার জন্যই লেখা।</strong></p>
+        </div>
+      </div>
+
+      <!-- Wave divider -->
+      <div class="wave-divider wave-light-to-dark" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C360,0 720,80 1080,40 C1260,20 1380,60 1440,40 L1440,80 L0,80 Z" fill="#14103A"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- SOLUTION / 3D HEALING PROTOCOL -->
+    <section class="solution-section section-dark reveal-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" style="color:#FDB813">সমাধান</span>
+          <h2 class="section-title" style="color:#FFF8EF">৩D হিলিং প্রোটোকল™</h2>
+          <p class="section-lead" style="color:rgba(255,248,239,0.75)">তিনটি স্তম্ভের সমন্বয়ে একটি সম্পূর্ণ আরোগ্যের পদ্ধতি — যা শরীর, মন ও জীবনযাপনকে একসাথে ঠিক করে।</p>
+        </div>
+        <div class="solution-cards">
+          <div class="solution-card reveal">
+            <div class="solution-num">০১</div>
+            <div class="solution-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>হোমিওপ্যাথি</h3>
+            <p class="solution-label">Vital Force Reset</p>
+            <p>শরীরের ভেতরের "ভাইটাল ফোর্স"কে পুনরায় সক্রিয় করা — কোনো পার্শ্বপ্রতিক্রিয়া ছাড়াই, মূল কারণ থেকে আরোগ্য।</p>
+          </div>
+          <div class="solution-card reveal reveal-delay-1">
+            <div class="solution-num">০২</div>
+            <div class="solution-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+            </div>
+            <h3>আধুনিক নিউরোসায়েন্স</h3>
+            <p class="solution-label">NRT · MAC · BLS</p>
+            <p>নিউরাল রিপ্যাটার্নিং, মাইন্ড-অ্যাডাপ্টেশন কোচিং ও ব্রেইন-লিম্বিক সিঙ্ক্রোনাইজেশন — মস্তিষ্ককে নতুন পথ শেখানো।</p>
+          </div>
+          <div class="solution-card reveal reveal-delay-2">
+            <div class="solution-num">০৩</div>
+            <div class="solution-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>লাইফস্টাইল রিপ্রোগ্রামিং</h3>
+            <p class="solution-label">গাট-ব্রেইন এক্সিস · নিউরোপ্লাস্টিসিটি</p>
+            <p>খাদ্যাভ্যাস, ঘুম, দৈনন্দিন রুটিন পুনর্গঠন — প্রতিটি দিনকে আরোগ্যের হাতিয়ার বানানো।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-divider wave-dark-to-light" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,20 C480,80 960,0 1440,50 L1440,80 L0,80 Z" fill="#FFF8EF"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- AUTHOR SECTION -->
+    <section class="author-section section-light reveal-section">
+      <div class="container">
+        <div class="author-inner">
+          <div class="author-avatar-wrap reveal">
+            <div class="author-avatar">
+              <span>মু</span>
+            </div>
+            <div class="author-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              যাচাইকৃত চিকিৎসক
+            </div>
+          </div>
+          <div class="author-bio reveal reveal-delay-1">
+            <span class="section-eyebrow" style="color:#0E9C8C">লেখক পরিচিতি</span>
+            <h2 class="author-name">ডা. মুশফিকুর রহমান</h2>
+            <p class="author-title">Integrated Homeopathic Physician & Mental Wellness Guide<br/>Founder, 3D Healing Blueprint™</p>
+            <p class="author-text">ডা. মুশফিকুর রহমান বছরের পর বছর ধরে অ্যাংজাইটি, ট্রমা ও বিষণ্ণতায় ভোগা রোগীদের সাথে কাজ করেছেন। তিনি আবিষ্কার করেছেন যে এই সমস্যাগুলোর সমাধান শুধু ওষুধে নয় — বরং হোমিওপ্যাথি, নিউরোসায়েন্স এবং জীবনযাত্রার পরিবর্তনের সমন্বয়ে একটি সম্পূর্ণ আরোগ্য সম্ভব। "প্রশান্তির সন্ধানে" সেই দশকের অভিজ্ঞতার নির্যাস।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-divider wave-light-to-dark" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,50 C300,10 600,70 900,30 C1100,5 1280,65 1440,35 L1440,80 L0,80 Z" fill="#14103A"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- BOOK CONTENTS / ACCORDION -->
+    <section class="contents-section section-dark reveal-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" style="color:#FDB813">বইয়ের ভেতরে</span>
+          <h2 class="section-title" style="color:#FFF8EF">৫টি পর্ব, ২৬টি অধ্যায়</h2>
+          <p class="section-lead" style="color:rgba(255,248,239,0.75)">অন্ধকার থেকে আলোর দিকে একটি সুশৃঙ্খল যাত্রা।</p>
+        </div>
+        <div class="accordion" id="book-accordion">
+          <div class="accordion-item reveal">
+            <button class="accordion-trigger" aria-expanded="false" data-accordion="1">
+              <div class="accordion-left">
+                <span class="accordion-num">পর্ব ০১</span>
+                <span class="accordion-title">অন্ধকারকে চেনা</span>
+              </div>
+              <svg class="accordion-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-body" id="acc-body-1">
+              <div class="accordion-content">
+                <p>অ্যাংজাইটি, ট্রমা ও বিষণ্ণতা আসলে কী — শুধু "মনের দুর্বলতা" নয়। কেন মেডিকেল রিপোর্টে ধরা পড়ে না, অথচ ভেতরে ভেতরে ক্ষয় হয়? বাস্তব কেস স্টাডি ও বৈজ্ঞানিক ব্যাখ্যাসহ আপনার অভিজ্ঞতাকে বৈধতা দেওয়া হয়েছে এই পর্বে।</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal reveal-delay-1">
+            <button class="accordion-trigger" aria-expanded="false" data-accordion="2">
+              <div class="accordion-left">
+                <span class="accordion-num">পর্ব ০২</span>
+                <span class="accordion-title">ভাইটাল ফোর্স রিসেট</span>
+              </div>
+              <svg class="accordion-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-body" id="acc-body-2">
+              <div class="accordion-content">
+                <p>হোমিওপ্যাথিক চিকিৎসার পেছনের বিজ্ঞান — ভাইটাল ফোর্স কীভাবে কাজ করে, কীভাবে ট্রমা সেটাকে অবরুদ্ধ করে, এবং নির্বাচিত রেমিডি দিয়ে কীভাবে সেই অবরোধ ভেঙে দেওয়া যায়। মানসিক সমস্যায় কার্যকর ১৫+ হোমিওপ্যাথিক রেমিডির বিস্তারিত।</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal reveal-delay-2">
+            <button class="accordion-trigger" aria-expanded="false" data-accordion="3">
+              <div class="accordion-left">
+                <span class="accordion-num">পর্ব ০৩</span>
+                <span class="accordion-title">মস্তিষ্ককে নতুন পথ শেখানো</span>
+              </div>
+              <svg class="accordion-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-body" id="acc-body-3">
+              <div class="accordion-content">
+                <p>আধুনিক নিউরোসায়েন্সের হাতিয়ার — NRT, MAC ও BLS প্র্যাকটিস। প্যানিক সার্কেল থেকে বের হওয়া, ওভারথিংকিং বন্ধ করার প্র্যাকটিক্যাল এক্সারসাইজ, এবং ব্রেইনকে "নিরাপদ" বোধ করাতে শেখানোর ধাপে ধাপে গাইড।</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal">
+            <button class="accordion-trigger" aria-expanded="false" data-accordion="4">
+              <div class="accordion-left">
+                <span class="accordion-num">পর্ব ০৪</span>
+                <span class="accordion-title">জীবনকে নতুন করে সাজানো</span>
+              </div>
+              <svg class="accordion-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-body" id="acc-body-4">
+              <div class="accordion-content">
+                <p>গাট-ব্রেইন এক্সিস, ঘুমের বিজ্ঞান, খাদ্যাভ্যাস ও নিউরোপ্লাস্টিসিটি — কীভাবে প্রতিদিনের ছোট অভ্যাসগুলো মানসিক স্বাস্থ্যকে গড়ে তোলে বা ভাঙে। ডেইলি রুটিন ডিজাইন এবং স্ট্রেস ম্যানেজমেন্টের বাস্তবসম্মত পদ্ধতি।</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item reveal reveal-delay-1">
+            <button class="accordion-trigger" aria-expanded="false" data-accordion="5">
+              <div class="accordion-left">
+                <span class="accordion-num">পর্ব ০৫</span>
+                <span class="accordion-title">নতুন সূর্যোদয় — স্থায়ী প্রশান্তি</span>
+              </div>
+              <svg class="accordion-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-body" id="acc-body-5">
+              <div class="accordion-content">
+                <p>আরোগ্য শুধু "উপসর্গ কমানো" নয় — একটি নতুন জীবন গড়ার রোডম্যাপ। রিল্যাপস প্রতিরোধ, দীর্ঘমেয়াদি মানসিক স্থিতিস্থাপকতা, এবং প্রশান্তিকে স্থায়ী করার উপায়। আপনার নিজস্ব হিলিং প্ল্যান তৈরির গাইড।</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-divider wave-dark-to-light" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,60 C200,10 500,80 800,30 C1050,0 1300,70 1440,25 L1440,80 L0,80 Z" fill="#FFF8EF"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- BONUS SECTION -->
+    <section class="bonus-section section-light reveal-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow" style="color:#0E9C8C">বিনামূল্যে পাচ্ছেন</span>
+          <h2 class="section-title">৪টি মূল্যবান পরিশিষ্ট — সম্পূর্ণ ফ্রি</h2>
+        </div>
+        <div class="bonus-grid">
+          <div class="bonus-card reveal">
+            <div class="bonus-tag">বোনাস ০১</div>
+            <h3>৫০টি হোমিওপ্যাথিক রেমিডি প্রোফাইল</h3>
+            <p>মানসিক সমস্যায় কার্যকর ৫০টি রেমিডির বিস্তারিত প্রোফাইল — লক্ষণ, মিলিয়ে নেওয়ার পদ্ধতি এবং ব্যবহারের নির্দেশনাসহ।</p>
+          </div>
+          <div class="bonus-card reveal reveal-delay-1">
+            <div class="bonus-tag">বোনাস ০২</div>
+            <h3>২১টি প্র্যাকটিক্যাল এক্সারসাইজ</h3>
+            <p>বইয়ের প্রতিটি অধ্যায়ের সাথে সংযুক্ত ২১টি এক্সারসাইজ — যেগুলো আপনি নিজে বাড়িতে বসে অনুশীলন করতে পারবেন।</p>
+          </div>
+          <div class="bonus-card reveal reveal-delay-2">
+            <div class="bonus-tag">বোনাস ০৩</div>
+            <h3>৩ দিনের মেন্টাল ডিটক্স রিট্রিট গাইড</h3>
+            <p>মানসিক "রিসেট" করার জন্য একটি সম্পূর্ণ ৩ দিনের প্রোগ্রাম — ঘরে বসেই করা সম্ভব।</p>
+          </div>
+          <div class="bonus-card reveal">
+            <div class="bonus-tag">বোনাস ০৪</div>
+            <h3>ডেইলি রুটিন প্ল্যান (প্রিন্টযোগ্য)</h3>
+            <p>সকাল থেকে রাত পর্যন্ত একটি আরোগ্য-সহায়ক রুটিন — যা আপনার জীবনে সরাসরি প্রয়োগ করতে পারবেন।</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-divider wave-light-to-dark" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,30 C400,80 800,0 1200,50 C1320,65 1400,35 1440,45 L1440,80 L0,80 Z" fill="#14103A"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- PRICE / OFFER SECTION -->
+    <section class="price-section section-dark reveal-section">
+      <div class="container">
+        <div class="price-box reveal">
+          <div class="price-arc-mini" aria-hidden="true">
+            <svg viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="priceArcGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#14103A"/>
+                  <stop offset="50%" stop-color="#0E9C8C"/>
+                  <stop offset="100%" stop-color="#FDB813"/>
+                </linearGradient>
+              </defs>
+              <path d="M 20 75 A 130 120 0 0 1 280 75" fill="none" stroke="url(#priceArcGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+              <circle cx="90" cy="42" r="8" fill="#FDB813" opacity="0.8"/>
+            </svg>
+          </div>
+          <span class="section-eyebrow" style="color:#FDB813">এখনই নিন</span>
+          <h2 style="color:#FFF8EF; font-family:'Tiro Bangla',serif; font-size:clamp(1.6rem,4vw,2.4rem); margin:0.5rem 0 1.5rem">বইটি পেতে আজই অর্ডার করুন</h2>
+          <div class="price-display">
+            <span class="price-old">৳১,৪৯৯</span>
+            <span class="price-new">৳৯৯৯</span>
+            <span class="price-badge">৩৩% ছাড়</span>
+          </div>
+          <ul class="price-perks">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              হার্ডকভার প্রিন্ট বই — সরাসরি আপনার দরজায়
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              ৪টি বোনাস পরিশিষ্ট বিনামূল্যে
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              সারা বাংলাদেশে ক্যাশ অন ডেলিভারি
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              এখন কোনো টাকা দিতে হবে না — বই পেলে দিন
+            </li>
+          </ul>
+          <button class="btn-primary btn-cta price-cta" data-goto="checkout">
+            এখনই অর্ডার করুন — ৳৯৯৯
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p style="color:rgba(255,248,239,0.5); font-size:0.85rem; margin-top:1rem">📦 সীমিত স্টক উপলব্ধ — আজই নিশ্চিত করুন</p>
+        </div>
+      </div>
+
+      <div class="wave-divider wave-dark-to-light" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,50 C300,10 700,75 1000,20 C1200,0 1370,60 1440,40 L1440,80 L0,80 Z" fill="#FFF8EF"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- TRUST BADGES -->
+    <section class="trust-section section-light reveal-section">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-badge reveal">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>অরিজিনাল কনটেন্ট</h3>
+            <p>সম্পূর্ণ মৌলিক গবেষণা ও ক্লিনিক্যাল অভিজ্ঞতার ভিত্তিতে লেখা</p>
+          </div>
+          <div class="trust-badge reveal reveal-delay-1">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>সারা বাংলাদেশে ডেলিভারি</h3>
+            <p>ঢাকা থেকে দেশের যেকোনো জেলায় দ্রুত হোম ডেলিভারি</p>
+          </div>
+          <div class="trust-badge reveal reveal-delay-2">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0E9C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            </div>
+            <h3>ক্যাশ অন ডেলিভারি</h3>
+            <p>বই হাতে পেয়ে টাকা দিন — আগে কোনো পেমেন্ট নয়</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-arc" aria-hidden="true">
+          <svg viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 40 55 A 160 140 0 0 1 360 55" fill="none" stroke="#0E9C8C" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            <circle cx="130" cy="24" r="5" fill="#FDB813" opacity="0.6"/>
+          </svg>
+        </div>
+        <p class="footer-title">প্রশান্তির সন্ধানে</p>
+        <p class="footer-author">ডা. মুশফিকুর রহমান | 3D Healing Blueprint™</p>
+        <p class="footer-copy">© ২০২৫ সকল স্বত্ব সংরক্ষিত</p>
+      </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky-cta" id="sticky-cta" aria-label="অর্ডার করুন">
+      <div class="sticky-cta-inner">
+        <div>
+          <span class="sticky-old-price">৳১,৪৯৯</span>
+          <span class="sticky-new-price">৳৯৯৯</span>
+        </div>
+        <button class="btn-primary sticky-btn" data-goto="checkout">এখনই অর্ডার করুন</button>
+      </div>
+    </div>
+
+  </div><!-- /view-home -->
+
+  <script src="app.js"></script>
+</body>
+</html>

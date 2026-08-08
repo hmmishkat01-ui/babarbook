@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ধন্যবাদ — প্রশান্তির সন্ধানে</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&family=Hind+Siliguri:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="thankyou.css" />
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="brand">প্রশান্তির সন্ধানে <span>·</span> অর্ডার কনফার্মেশন</div>
+  </header>
+
+  <!-- ═══ HERO (dark) ════════════════════════════════════════ -->
+  <section class="hero-section">
+
+    <!-- Sunrise Arc -->
+    <div class="arc-wrapper" aria-hidden="true">
+      <svg class="arc-svg" viewBox="0 0 460 230" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="arcGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#14103A"/>
+            <stop offset="40%"  stop-color="#0E9C8C"/>
+            <stop offset="100%" stop-color="#FDB813"/>
+          </linearGradient>
+          <radialGradient id="glowGrad" cx="50%" cy="100%" r="70%">
+            <stop offset="0%"   stop-color="#FDB813" stop-opacity=".18"/>
+            <stop offset="60%"  stop-color="#0E9C8C" stop-opacity=".08"/>
+            <stop offset="100%" stop-color="#14103A" stop-opacity="0"/>
+          </radialGradient>
+          <clipPath id="halfClip">
+            <rect x="0" y="0" width="460" height="230"/>
+          </clipPath>
+          <filter id="sunGlow" x="-80%" y="-80%" width="260%" height="260%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <ellipse cx="230" cy="230" rx="230" ry="160" fill="url(#glowGrad)" clip-path="url(#halfClip)"/>
+        <path d="M 10,230 A 220,220 0 0,1 450,230" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="28" stroke-linecap="round"/>
+        <path id="arcBand"
+          d="M 10,230 A 220,220 0 0,1 450,230"
+          fill="none"
+          stroke="url(#arcGrad)"
+          stroke-width="24"
+          stroke-linecap="round"
+          stroke-dasharray="692"
+          stroke-dashoffset="692"
+        />
+        <line x1="0" y1="230" x2="460" y2="230" stroke="rgba(14,156,140,.18)" stroke-width="1.5"/>
+
+        <g id="sunDot" filter="url(#sunGlow)" class="sun-dot">
+          <circle id="sunHalo"  cx="10" cy="230" r="18" fill="rgba(253,184,19,.22)"/>
+          <circle id="sunCore"  cx="10" cy="230" r="11" fill="#FDB813"/>
+          <circle id="sunCenter" cx="10" cy="230" r="5"  fill="#FFE9B8"/>
+        </g>
+      </svg>
+
+      <!-- Checkmark ring -->
+      <div class="check-ring" id="checkRing">
+        <svg viewBox="0 0 24 24"><polyline points="5 12 10 17 19 7"/></svg>
+      </div>
+    </div>
+
+    <!-- Hero text -->
+    <div class="hero-text">
+      <div class="order-tag reveal">✦ অর্ডার সফলভাবে গ্রহণ করা হয়েছে</div>
+      <h1 class="reveal" id="heroHeadline">
+        ধন্যবাদ,<br/>
+        <span class="name-hl" id="displayName">আপনার অর্ডারটি কনফার্ম হয়েছে</span>
+      </h1>
+      <p class="sub reveal">আপনার প্রশান্তির যাত্রা শুরু হয়েছে। আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।</p>
+    </div>
+
+    <!-- Wave divider dark→light -->
+    <div class="wave-hero">
+      <svg viewBox="0 0 1440 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:72px;display:block;">
+        <path d="M0,36 C240,72 480,0 720,36 C960,72 1200,0 1440,36 L1440,72 L0,72 Z" fill="#FFF8EF"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══ MAIN CONTENT (light) ══════════════════════════════ -->
+  <main class="main-content">
+
+    <!-- Order Summary Card -->
+    <div class="order-card reveal" id="orderCard">
+      <div class="order-card-header">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24"><path d="M21 8L12 3 3 8v8l9 5 9-5V8z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <div>
+          <h2>অর্ডার সামারি</h2>
+          <div class="order-id" id="orderIdDisplay">#PS-00000</div>
+        </div>
+      </div>
+      <div class="order-row">
+        <span class="label">বইয়ের নাম</span>
+        <span class="value">প্রশান্তির সন্ধানে</span>
+      </div>
+      <div class="order-row">
+        <span class="label">পরিমাণ</span>
+        <span class="value" id="qtyDisplay">১ কপি</span>
+      </div>
+      <div class="order-row">
+        <span class="label">ডেলিভারি</span>
+        <span class="value" id="districtDisplay">ঢাকা</span>
+      </div>
+      <div class="order-row">
+        <span class="label">ফোন নম্বর</span>
+        <span class="value" id="phoneDisplay">—</span>
+      </div>
+      <div class="order-row">
+        <span class="label">পেমেন্ট পদ্ধতি</span>
+        <span class="value">ক্যাশ অন ডেলিভারি</span>
+      </div>
+      <div class="order-row">
+        <span class="label">মোট মূল্য</span>
+        <span class="value price" id="totalDisplay">৳ ৯৯৯</span>
+      </div>
+    </div>
+
+    <!-- Delivery Steps -->
+    <div class="steps-section">
+      <h3 class="reveal">এরপর কী হবে?</h3>
+      <ol class="timeline" id="timeline">
+        <li class="step-item">
+          <div class="step-icon teal">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="step-body">
+            <div class="step-num">ধাপ ১</div>
+            <h4>টিম ফোনে কনফার্ম করবে</h4>
+            <p>আমাদের টিম ২৪ ঘণ্টার মধ্যে আপনার দেওয়া নম্বরে ফোন করে অর্ডার কনফার্ম করবে।</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-icon amber">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <div class="step-body">
+            <div class="step-num">ধাপ ২</div>
+            <h4>প্যাক করে কুরিয়ারে পাঠানো হবে</h4>
+            <p>বই যত্নসহকারে প্যাকেজ করে কুরিয়ার সার্ভিসে পাঠানো হবে। একটি ট্র্যাকিং নম্বর দেওয়া হবে।</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <div class="step-icon rose">
+            <svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12H2M22 12h-4"/></svg>
+          </div>
+          <div class="step-body">
+            <div class="step-num">ধাপ ৩</div>
+            <h4>বই হাতে পেয়ে পরিশোধ করুন</h4>
+            <p>ডেলিভারি পাওয়ার সময় ক্যাশ পরিশোধ করুন। সাধারণত ৩–৫ কার্যদিবস লাগে।</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Emotional Closing Note -->
+    <div class="closing-note reveal">
+      <span class="quote-mark">"</span>
+      <p>
+        প্রতিটি রাতের শেষে একটি নতুন ভোর আসে।<br/>
+        আজ আপনি সেই আলোর দিকে প্রথম পদক্ষেপটি নিয়েছেন —<br/>
+        এই যাত্রায় বইটি আপনার সঙ্গী হোক।
+      </p>
+      <div class="author">— প্রশান্তির সন্ধানে</div>
+    </div>
+
+    <!-- Share Section -->
+    <div class="share-section reveal">
+      <h3>কাউকে চেনেন যার এই বইটা দরকার?</h3>
+      <p>আপনার প্রিয়জনদের সাথে শেয়ার করুন — একটু আলো ছড়িয়ে দিন।</p>
+      <div class="share-buttons">
+        <button class="share-btn whatsapp" onclick="shareWhatsApp()">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp-এ শেয়ার
+        </button>
+        <button class="share-btn facebook" onclick="shareFacebook()">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook-এ শেয়ার
+        </button>
+        <button class="share-btn copy" onclick="copyLink()">
+          <svg viewBox="0 0 24 24" style="fill:none;stroke:var(--dawn-teal);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+          লিংক কপি করুন
+        </button>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-btn-wrap reveal">
+      <a href="../index.html" class="back-btn">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        আরেকটা অর্ডার করুন / হোমে ফিরে যান
+      </a>
+    </div>
+  </main>
+
+  <!-- Wave divider light→dark -->
+  <div class="wave-bottom">
+    <svg viewBox="0 0 1440 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:72px;display:block;">
+      <path d="M0,36 C360,0 720,72 1080,36 C1260,18 1380,54 1440,36 L1440,72 L0,72 Z" fill="var(--ink-night)"/>
+    </svg>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>
+      প্রশান্তির সন্ধানে · বাংলাদেশ<br/>
+      প্রশ্ন থাকলে: <a href="mailto:support@proshantir.com">support@proshantir.com</a>
+    </p>
+  </footer>
+
+  <script src="thankyou.js"></script>
+</body>
+</html>
